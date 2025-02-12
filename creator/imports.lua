@@ -7,7 +7,7 @@
 
 ESX = exports['dehka']:getSharedObject()
 
-if not IsDuplicityVersion() then -- Only register this event for the client
+if not IsDuplicityVersion() then
     AddEventHandler('esx:setPlayerData', function(key, val, last)
         if GetInvokingResource() == 'dehka' then
             ESX.PlayerData[key] = val
